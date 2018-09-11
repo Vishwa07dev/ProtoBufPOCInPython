@@ -1,0 +1,16 @@
+syntax="proto3";
+
+package example.second;
+
+message EnumMessage {
+    int32 id = 1;
+    DayOfWeek day =2;
+
+
+}
+
+enum DayOfWeek{
+    UNKNOWN_DAY =0;
+    MONDAY =1;
+    TUESDAY=2;
+}

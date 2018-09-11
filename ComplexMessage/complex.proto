@@ -1,0 +1,22 @@
+syntax="proto3";
+
+package example.third;
+
+message ChildObject {
+    int32 id = 1;
+    string name = 2;
+
+}
+
+enum Brands {
+    UNKNOWN_BRAND = 0;
+    LOW_BRAND =1;
+    HIGH_BRAND =2;
+}
+
+message ComplexObject {
+    int32 id = 1;
+    Brands brand = 2;
+    ChildObject childObject=3 ;
+
+}
